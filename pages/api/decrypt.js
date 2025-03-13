@@ -33,6 +33,6 @@ export default function handler(req, res) {
 
     res.json({ decrypted });
   } catch (error) {
-    res.status(500).json({ error: "Error decrypting text" });
+    res.status(500).json({ error: `Error decrypting text ${error}` });
   }
 }
